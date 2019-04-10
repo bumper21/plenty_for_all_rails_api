@@ -15,7 +15,8 @@ gem 'puma', '~> 3.11'
 gem 'hirb'
 
 # DEVISE
-gem 'devise'
+gem 'devise', '~> 4.6.2'
+gem 'devise-jwt', '~> 0.5.9'
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'

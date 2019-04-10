@@ -11,12 +11,15 @@ gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.11'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.5'
-
 gem 'hirb'
+
+gem 'dotenv-rails', groups: [:development, :test]
 
 # DEVISE
 gem 'devise', '~> 4.6.2'
 gem 'devise-jwt', '~> 0.5.9'
+
+
 
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'

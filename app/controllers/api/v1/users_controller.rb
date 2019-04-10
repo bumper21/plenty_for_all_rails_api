@@ -1,3 +1,3 @@
-class Api::V1::UsersController < Devise::SessionsController
+class Api::V1::UsersController < ApplicationController
   before_action :authenticate_user!
 end

@@ -11,8 +11,8 @@ gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.11'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.5'
-gem 'hirb'
 
+gem 'pry-rails'
 gem 'dotenv-rails', groups: [:development, :test]
 
 # DEVISE
@@ -47,6 +47,7 @@ group :development do
   gem 'listen', '>= 3.0.5', '< 3.2'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+  gem 'hirb'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 

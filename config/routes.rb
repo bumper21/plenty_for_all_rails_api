@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
   
   # DEVISE API ROUTES
-  namespace :api, defaults: { format: :json } do
-    namespace :v1 do
+
+
+  scope :api, defaults: { format: :json } do
+    scope :v1 do
       devise_for :users,
                 path: '/users',
                 path_names: {
@@ -14,6 +16,8 @@ Rails.application.routes.draw do
                   sessions: 'api/v1/sessions',
                   registrations: 'api/v1/registrations'
                 }
+
+        get '/users/current', { to: 'api/v1/users#current' }
     end
   end
 

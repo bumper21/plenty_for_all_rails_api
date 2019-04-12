@@ -16,6 +16,8 @@ Rails.application.routes.draw do
                   sessions: 'api/v1/sessions',
                   registrations: 'api/v1/registrations'
                 }
+
+        get '/users/current', { to: 'api/v1/users#current' }
     end
   end
 

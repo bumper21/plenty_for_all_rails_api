@@ -24,7 +24,7 @@ module PlentyForAllApi
 
     config.middleware.insert_before 0, Rack::Cors do 
       allow do
-        origins 'localhost:3000'
+        origins 'localhost:3000', 'localhost:3030'
         resource '/api/*',
           headers: %w(Authorization),
           methods: [:get, :post, :patch, :delete, :put],
